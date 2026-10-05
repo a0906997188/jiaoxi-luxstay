@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiaoxi LuxStay｜礁溪 10 大溫泉飯店評鑑與導購</title>
+  <meta name="description" content="精選礁溪 10 大溫泉飯店，沉浸式視覺評鑑、情境篩選與橫向矩陣比較，一鍵查看 Klook 即時優惠。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== 導覽列 ===== -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo">
+      <span class="en">Jiaoxi</span> LuxStay
+    </a>
+    <nav class="nav__links" aria-label="主選單">
+      <a href="#hotels">精選飯店</a>
+      <a href="#guide">美人湯百科</a>
+      <a href="#transport">交通懶人包</a>
+    </nav>
+    <a href="#hotels" class="btn btn--accent btn--sm nav__cta">立即搶優惠</a>
+  </header>
+
+  <main id="top">
+    <!-- ===== Hero 沉浸式視覺 ===== -->
+    <section class="hero" aria-label="首頁主視覺">
+      <div class="hero__media" aria-hidden="true">
+        <!-- 若取得飯店授權影片，可替換為 <video autoplay muted loop playsinline src="hero.mp4"></video> -->
+        <div class="hero__img"></div>
+        <div class="hero__steam">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__badge" role="status">
+        <span class="pulse"></span>🔥 Klook 限時 85 折優惠進行中
+        <span class="hero__countdown" id="countdown">--:--:--</span>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow en">Curated Hot Spring Retreats · Jiaoxi, Yilan</p>
+        <h1 class="hero__title">在蘭陽山林間，<br>浸一池剛剛好的美人湯</h1>
+        <p class="hero__sub">嚴選礁溪 10 大溫泉飯店，從湯池材質、私密性到步行距離，一次看懂、一鍵比價。</p>
+
+        <div class="vibe" role="group" aria-label="情境式選單">
+          <button class="vibe__btn" data-vibe="couple">💍 浪漫情侶私湯</button>
+          <button class="vibe__btn" data-vibe="family">👨‍👩‍👧 親子放電樂園</button>
+          <button class="vibe__btn" data-vibe="nocar">🚂 無車輕旅步行5分</button>
+          <button class="vibe__btn" data-vibe="day">🍵 純泡湯日歸提案</button>
+        </div>
+      </div>
+
+      <a href="#hotels" class="hero__scroll" aria-label="往下瀏覽">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===== 信任列 ===== -->
+    <section class="trust" aria-label="平台特色">
+      <div class="trust__item"><strong>10</strong><span>嚴選溫泉飯店</span></div>
+      <div class="trust__item"><strong>6</strong><span>維度橫向比較</span></div>
+      <div class="trust__item"><strong>pH 7–8</strong><span>碳酸氫鈉美人湯</span></div>
+      <div class="trust__item"><strong>3–8%</strong><span>OTA 即時折扣</span></div>
+    </section>
+
+    <!-- ===== 飯店清單 ===== -->
+    <section class="hotels" id="hotels">
+      <div class="section-head">
+        <p class="section-head__eyebrow en">The Curated Ten</p>
+        <h2>礁溪 10 大溫泉飯店評鑑</h2>
+        <p>勾選「加入比較」最多 4 間，開啟橫向矩陣對比。</p>
+      </div>
+
+      <!-- 篩選列 -->
+      <div class="filters" id="filters">
+        <div class="filters__row">
+          <span class="filters__label">情境</span>
+          <div class="chips" data-group="vibe">
+            <button class="chip is-active" data-value="all">全部</button>
+            <button class="chip" data-value="couple">💍 情侶私湯</button>
+            <button class="chip" data-value="family">👨‍👩‍👧 親子</button>
+            <button class="chip" data-value="nocar">🚂 無車輕旅</button>
+            <button class="chip" data-value="day">🍵 日歸</button>
+          </div>
+        </div>
+        <div class="filters__row">
+          <span class="filters__label">價格帶</span>
+          <div class="chips" data-group="price">
+            <button class="chip is-active" data-value="all">不限</button>
+            <button class="chip" data-value="budget">$3,000 以下</button>
+            <button class="chip" data-value="mid">$3,000–8,000</button>
+            <button class="chip" data-value="lux">$8,000 以上</button>
+          </div>
+        </div>
+        <div class="filters__row">
+          <span class="filters__label">設施</span>
+          <div class="chips chips--multi" data-group="feature">
+            <button class="chip" data-value="nude">♨️ 大眾裸湯</button>
+            <button class="chip" data-value="infinity">🌅 無邊際池</button>
+            <button class="chip" data-value="private">🛁 獨立湯屋</button>
+            <button class="chip" data-value="kids">🐟 親子設施</button>
+            <button class="chip" data-value="walk">🚶 車站步行 10 分內</button>
+          </div>
+        </div>
+        <div class="filters__bar">
+          <p class="filters__count" id="resultCount" aria-live="polite"></p>
+          <div class="filters__sort">
+            <label for="sort">排序</label>
+            <select id="sort">
+              <option value="rank">編輯推薦</option>
+              <option value="priceAsc">價格低 → 高</option>
+              <option value="priceDesc">價格高 → 低</option>
+              <option value="walk">離車站最近</option>
+            </select>
+            <button class="link-btn" id="resetFilters">清除篩選</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid" id="hotelGrid"></div>
+      <div class="empty" id="emptyState" hidden>
+        <p>😢 沒有符合條件的飯店</p>
+        <button class="btn btn--primary" id="emptyReset">清除篩選重新探索</button>
+      </div>
+    </section>
+
+    <!-- ===== 美人湯小百科 ===== -->
+    <section class="guide" id="guide">
+      <div class="guide__visual" aria-hidden="true">
+        <div class="ph-ring"><span class="en">pH</span><strong>7–8</strong><small>中性</small></div>
+      </div>
+      <div class="guide__body">
+        <p class="section-head__eyebrow en">Hot Spring 101</p>
+        <h2>碳酸氫鈉泉小百科</h2>
+        <p>礁溪溫泉屬於<strong>中性碳酸氫鈉泉（pH 7–8）</strong>，泉水清澈無臭，富含鈉、鎂、鈣、鉀等礦物質。浸泡後肌膚光滑柔細，自古便享有「美人湯」美譽。</p>
+        <ul class="guide__list">
+          <li><span>💧</span><div><b>清澈無臭</b>不同於硫磺泉，無刺鼻氣味，衣物不易染味。</div></li>
+          <li><span>✨</span><div><b>軟化角質</b>碳酸氫根能溫和潔淨，泡後如擦上一層保養。</div></li>
+          <li><span>⏱️</span><div><b>泡湯建議</b>每次 10–15 分鐘、水溫 40–42°C，記得適時補充水分。</div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== 交通懶人包 ===== -->
+    <section class="transport" id="transport">
+      <div class="section-head">
+        <p class="section-head__eyebrow en">Getting There</p>
+        <h2>交通懶人包</h2>
+      </div>
+      <div class="transport__grid">
+        <article class="t-card">
+          <div class="t-card__icon">🚆</div>
+          <h3>大眾運輸</h3>
+          <p>搭乘客運至「<b>礁溪轉運站</b>」，或臺鐵至「<b>礁溪火車站</b>」，步行 5–10 分鐘即可抵達核心飯店區。</p>
+          <button class="link-btn" data-quick="nocar">看步行可達的飯店 →</button>
+        </article>
+        <article class="t-card">
+          <div class="t-card__icon">🚗</div>
+          <h3>自駕開車</h3>
+          <p>國道五號於<b>頭城交流道</b>下，沿台 9 線直達礁溪市區，多數飯店提供住客免費停車。</p>
+          <a class="link-btn" href="https://www.google.com/maps/search/礁溪溫泉" target="_blank" rel="noopener">開啟 Google 地圖 →</a>
+        </article>
+        <article class="t-card">
+          <div class="t-card__icon">🚐</div>
+          <h3>飯店接駁</h3>
+          <p>位於山麓的飯店（如礁溪老爺）提供火車站定時接駁，訂房時記得預約接駁時段。</p>
+          <button class="link-btn" data-quick="family">看親子度假飯店 →</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <p class="nav__logo"><span class="en">Jiaoxi</span> LuxStay</p>
+      <p>為講究生活美學的你，策展礁溪最好的一池湯。</p>
+    </div>
+    <p class="footer__note">※ 本站價格為參考起價，實際價格以 Klook 及飯店官網即時公告為準。本站部分連結為聯盟行銷連結，透過連結訂購本站可能獲得分潤，不影響您的訂購價格。</p>
+    <p class="footer__copy">© 2026 Jiaoxi LuxStay & Curated Aggregator</p>
+  </footer>
+
+  <!-- ===== 懸浮比較匣 ===== -->
+  <aside class="drawer" id="compareDrawer" aria-label="比較匣" aria-hidden="true">
+    <div class="drawer__inner">
+      <div class="drawer__info">
+        <p class="drawer__count">已選擇 <b id="compareCount">0</b>/4 間飯店</p>
+        <div class="drawer__thumbs" id="compareThumbs"></div>
+      </div>
+      <div class="drawer__actions">
+        <button class="link-btn link-btn--light" id="clearCompare">清空</button>
+        <button class="btn btn--sand" id="openMatrix">立即進行橫向矩陣對比</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== 全螢幕矩陣對比彈窗 ===== -->
+  <div class="modal" id="matrixModal" role="dialog" aria-modal="true" aria-labelledby="matrixTitle" hidden>
+    <div class="modal__panel">
+      <div class="modal__head">
+        <h2 id="matrixTitle">橫向矩陣對比</h2>
+        <button class="modal__close" id="closeMatrix" aria-label="關閉">✕</button>
+      </div>
+      <p class="modal__hint">← 左右滑動查看更多 →</p>
+      <div class="matrix-wrap">
+        <table class="matrix" id="matrixTable"></table>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
