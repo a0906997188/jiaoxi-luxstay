@@ -9,7 +9,8 @@ const HOTELS = [
     pools: "野天風呂（草本 / 能量水療 / 溫泉魚）、無邊際觀景泳池",
     audience: "親子家庭、高端度假", location: "火車站車行 10 分鐘，提供接駁", walk: null,
     copy: "坐擁蘭陽平原無敵景致，結合四大主題野天風呂與溫泉魚足浴，享受頂級度假奢華。",
-    price: 12800, unit: "晚", vibes: ["family"], features: ["infinity", "kids"],
+    price: 12800, priceMax: 26000, unit: "晚",
+    address: "宜蘭縣礁溪鄉五峰路69號", official: "https://www.hotelroyal.com.tw/zh-tw/chiaohsi", vibes: ["family"], features: ["infinity", "kids"],
     matrix: {
       roomPool: "房內溫泉浴池，可眺望蘭陽平原",
       publicBath: "四大主題野天風呂",
@@ -23,7 +24,8 @@ const HOTELS = [
     pools: "光之湯男女裸湯、簡約高雅客房湯池",
     audience: "情侶輕奢、重視設計感族群", location: "距火車站步行 10 分鐘", walk: 10,
     copy: "寒舍集團美學力作，以自然木質與光影交織出光之湯裸湯，完美兼具現代感與私密放鬆體驗。",
-    price: 9800, unit: "晚", vibes: ["couple", "nocar"], features: ["nude", "walk"],
+    price: 9800, priceMax: 20000, unit: "晚",
+    address: "宜蘭縣礁溪鄉健康路1號", official: "https://www.muhotels.com/", vibes: ["couple", "nocar"], features: ["nude", "walk"],
     matrix: {
       roomPool: "簡約高雅客房湯池（木質調）",
       publicBath: "光之湯男女分池裸湯",
@@ -37,7 +39,8 @@ const HOTELS = [
     pools: "慢活 SPA 水療區、寬敞日式石造浴池",
     audience: "親子家庭、三代同堂", location: "距礁溪火車站步行 5 分鐘", walk: 5,
     copy: "豐富的慢活 SPA 與道地日式浴衣體驗，房內湯池寬敞舒適，讓全家大小在歡樂氛圍中徹底釋放壓力。",
-    price: 8600, unit: "晚", vibes: ["family", "nocar"], features: ["kids", "walk"],
+    price: 8600, priceMax: 18000, unit: "晚",
+    address: "宜蘭縣礁溪鄉健康路77號", official: "https://jiaosi.evergreen-hotels.com/", vibes: ["family", "nocar"], features: ["kids", "walk"],
     matrix: {
       roomPool: "寬敞日式石造浴池",
       publicBath: "慢活 SPA 水療區",
@@ -51,7 +54,8 @@ const HOTELS = [
     pools: "頂樓瀧月無邊際溫泉泳池、竹林景致私房湯池",
     audience: "情侶約會、輕奢渡假", location: "距火車站步行 5 分鐘", walk: 5,
     copy: "融合日式禪風與竹林造景，頂樓無邊際溫泉泳池遠眺蘭陽夜景，打造極致私密的日系泡湯饗宴。",
-    price: 7200, unit: "晚", vibes: ["couple", "nocar"], features: ["infinity", "private", "walk"],
+    price: 7200, priceMax: 15000, unit: "晚",
+    address: "宜蘭縣礁溪鄉溫泉路67號", official: "https://jiaoxi.wellspringbysilks.com/tw/index", vibes: ["couple", "nocar"], features: ["infinity", "private", "walk"],
     matrix: {
       roomPool: "竹林景致私房湯池",
       publicBath: "頂樓瀧月無邊際溫泉泳池",
@@ -65,7 +69,8 @@ const HOTELS = [
     pools: "日式大眾風呂、房內景觀精緻湯池",
     audience: "日本文化愛好者、質感背包客", location: "距火車站步行 3 分鐘", walk: 3,
     copy: "將日本山形縣正統泡湯文化移轉至礁溪，清水模質感結合無敵窗景，在房內即可細品美人湯之美。",
-    price: 5800, unit: "晚", vibes: ["couple", "nocar"], features: ["nude", "walk"],
+    price: 5800, priceMax: 14000, unit: "晚",
+    address: "宜蘭縣礁溪鄉中山路二段187號", official: "https://www.yamagatakaku.com.tw/", vibes: ["couple", "nocar"], features: ["nude", "walk"],
     matrix: {
       roomPool: "清水模景觀精緻湯池",
       publicBath: "日式大眾風呂",
@@ -77,15 +82,16 @@ const HOTELS = [
   {
     id: 6, name: "呆水溫泉", tag: "隱世森林系美學",
     pools: "森脈房型雙湯池、結合精緻餐點之獨立湯屋",
-    audience: "追求極致安靜、私房秘境旅客", location: "近林美石磐步道山麓", walk: null,
+    audience: "追求極致安靜、私房秘境旅客", location: "五峰旗風景區旁山麓", walk: null,
     copy: "隱身於綠意山林之間的絕美秘境，極簡建築搭配頂級雙湯池與特色餐點，給予靈魂最深層的洗滌。",
-    price: 11800, unit: "晚", vibes: ["couple", "day"], features: ["private"],
+    price: 11800, priceMax: 22000, unit: "晚",
+    address: "宜蘭縣礁溪鄉五峰路89-6號", official: "https://www.suispring.com/", vibes: ["couple", "day"], features: ["private"],
     matrix: {
       roomPool: "森脈房型雙湯池",
       publicBath: "—（以獨立湯屋為主）",
       kids: "—",
       dining: "湯屋結合精緻特色餐點",
-      transport: "林美石磐步道山麓・建議自駕或計程車",
+      transport: "五峰旗風景區旁・可搭台灣好行綠 11A 或自駕",
     },
   },
   {
@@ -93,7 +99,8 @@ const HOTELS = [
     pools: "晴波溫泉 SPA 水療池（沖擊 / 氣泡 / 穴道）、歐風景觀湯屋",
     audience: "親子家庭、重視水療機能旅客", location: "距轉運站車行 5 分鐘", walk: null,
     copy: "氣派的歐式莊園建築，擁有多達十多種專業水療設施的晴波池，滿足全家大小趣味與放鬆兼具的泡湯願望。",
-    price: 4600, unit: "晚", vibes: ["family", "day"], features: ["kids", "private"],
+    price: 4600, priceMax: 12000, unit: "晚",
+    address: "宜蘭縣礁溪鄉健康一街1號", official: "https://www.hotel-valletta.com/", vibes: ["family", "day"], features: ["kids", "private"],
     matrix: {
       roomPool: "歐風景觀湯屋",
       publicBath: "晴波 SPA 水療池（著泳衣）",
@@ -107,7 +114,8 @@ const HOTELS = [
     pools: "不規則清水模獨立雙人湯屋、日式禪風空間",
     audience: "建築美學愛好者、打卡族", location: "鄰近湯圍溝公園", walk: null,
     copy: "由知名建築師操刀，獨特清水模外觀如同一顆天然巨石，內裝流線與光影極具張力，是兼具藝術與私密性的泡湯首選。",
-    price: 4200, unit: "晚", vibes: ["couple", "day"], features: ["private"],
+    price: 4200, priceMax: 10000, unit: "晚",
+    address: "宜蘭縣礁溪鄉信義路34巷33號", official: "https://www.smoking-rock.com/", vibes: ["couple", "day"], features: ["private"],
     matrix: {
       roomPool: "不規則清水模雙人湯池",
       publicBath: "—（以獨立湯屋為主）",
@@ -121,7 +129,8 @@ const HOTELS = [
     pools: "嘉賓莊老旅社翻新、日式竹製屏風雙人湯屋",
     audience: "文青網紅、小資情侶", location: "距火車站步行 5 分鐘", walk: 5,
     copy: "由老字號旅社華麗轉身，融合日式拉門、碎石子路與老宅靈魂，在濃厚昭和風情中享受高 CP 值溫泉時光。",
-    price: 2880, unit: "晚", vibes: ["couple", "nocar", "day"], features: ["private", "walk"],
+    price: 2880, priceMax: 7000, unit: "晚",
+    address: "宜蘭縣礁溪鄉德陽路26號", official: "https://www.hoteleastgroup.com/hotels/yunoyado-dy/", vibes: ["couple", "nocar", "day"], features: ["private", "walk"],
     matrix: {
       roomPool: "日式竹製屏風雙人湯屋",
       publicBath: "—",
@@ -135,7 +144,9 @@ const HOTELS = [
     pools: "戶外綠意露天裸湯（男女湯定期對調）",
     audience: "小資族、無車背包客、溫泉純粹主義者", location: "位於礁溪溫泉公園內，火車站步行可達", walk: 10,
     copy: "以銅板價格享受宛如日本深山的露天森林裸湯，被綠意環繞的質樸沸騰，是尋求身心徹底放鬆的在地私房推薦。",
-    price: 150, unit: "人", vibes: ["nocar", "day"], features: ["nude", "walk"],
+    price: 200, priceMax: 400, unit: "人",
+    address: "宜蘭縣礁溪鄉公園路70巷60號", official: "https://travel.yilan.gov.tw/zh-tw/attraction/97/",
+    officialLabel: "宜蘭縣政府官方介紹", vibes: ["nocar", "day"], features: ["nude", "walk"],
     matrix: {
       roomPool: "—（不提供住宿）",
       publicBath: "戶外露天森林裸湯・男女湯定期對調",
@@ -160,7 +171,13 @@ const PHOTO_POOL = [1018, 28, 15, 11, 128, 17, 10, 116, 29, 190, 94, 124, 16, 11
 const imgUrl = (id, n, w = 800, h = 600) =>
   `https://picsum.photos/id/${PHOTO_POOL[((id - 1) * 3 + n - 1) % PHOTO_POOL.length]}/${w}/${h}`;
 const klookUrl = (h) => `https://www.klook.com/zh-TW/search/result/?query=${encodeURIComponent(h.name)}`;
-const officialUrl = (h) => `https://www.google.com/search?q=${encodeURIComponent(h.name + " 官網")}`;
+const mapsLink = (h) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(h.name + " " + h.address)}`;
+const mapsEmbed = (h) => `https://www.google.com/maps?q=${encodeURIComponent(h.name + " " + h.address)}&z=16&output=embed`;
+const PRICE_SCALE = 26000; // 價格帶長條的最大刻度
+const rangePos = (h) => ({
+  left: (h.price / PRICE_SCALE) * 100,
+  width: Math.max(((h.priceMax - h.price) / PRICE_SCALE) * 100, 2),
+});
 const priceBand = (p) => (p < 3000 ? "budget" : p <= 8000 ? "mid" : "lux");
 const salePrice = (h) => Math.round((h.price * DISCOUNT) / 10) * 10;
 
@@ -196,6 +213,7 @@ function cardHTML(h, i) {
     .map((n) => `<img src="${imgUrl(h.id, n)}" alt="${h.name} 實景照 ${n}" loading="lazy" onerror="this.style.visibility='hidden'">`)
     .join("");
   const badges = h.vibes.map((v) => `<span class="badge">${VIBE_LABEL[v]}</span>`).join("");
+  const pos = rangePos(h);
   return `
   <article class="card ${checked ? "is-compared" : ""}" data-id="${h.id}" style="animation-delay:${i * 60}ms">
     <div class="card__media">
@@ -211,9 +229,18 @@ function cardHTML(h, i) {
       <ul class="card__meta">
         <li><span>♨️</span><span>${h.pools}</span></li>
         <li><span>👥</span><span>${h.audience}</span></li>
-        <li><span>📍</span><span>${h.location}</span></li>
+        <li><span>🚶</span><span>${h.location}</span></li>
+        <li><span>📍</span><a class="addr" href="${mapsLink(h)}" target="_blank" rel="noopener">${h.address}</a></li>
       </ul>
       <div class="badges">${badges}</div>
+      <div class="range" title="以 $0–$${PRICE_SCALE.toLocaleString("en-US")} 為刻度">
+        <div class="range__head">
+          <span>參考價格帶</span>
+          <b>${fmt(h.price)} – ${fmt(h.priceMax)} <small>/ ${h.unit}</small></b>
+        </div>
+        <div class="range__track"><span style="left:${pos.left}%;width:${pos.width}%"></span></div>
+        <div class="range__scale"><span>$0</span><span>$13,000</span><span>$26,000</span></div>
+      </div>
       <div class="card__foot">
         <div class="price">
           <small>Klook 折扣中</small>
@@ -225,8 +252,10 @@ function cardHTML(h, i) {
       </div>
       <div class="card__cta">
         <a class="btn btn--accent" href="${klookUrl(h)}" target="_blank" rel="noopener sponsored">查看 Klook 優惠</a>
-        <a class="btn btn--ghost" href="${officialUrl(h)}" target="_blank" rel="noopener">直連飯店官網</a>
+        <a class="btn btn--ghost" href="${h.official}" target="_blank" rel="noopener">${h.officialLabel || "直連飯店官網"}</a>
+        <button class="btn btn--map" data-map="${h.id}" aria-expanded="false">📍 查看 Google 地圖</button>
       </div>
+      <div class="card__map" hidden></div>
     </div>
   </article>`;
 }
@@ -347,6 +376,23 @@ $("#hotelGrid").addEventListener("change", (e) => {
   if (!cb) return;
   if (!toggleCompare(+cb.dataset.compare, cb.checked)) cb.checked = false;
 });
+// Google 地圖展開 / 收合（第一次展開才載入 iframe）
+$("#hotelGrid").addEventListener("click", (e) => {
+  const btn = e.target.closest("[data-map]");
+  if (!btn) return;
+  const h = HOTELS.find((x) => x.id === +btn.dataset.map);
+  const box = $(".card__map", btn.closest(".card"));
+  const open = box.hidden;
+  if (open && !box.firstChild) {
+    box.innerHTML = `
+      <iframe src="${mapsEmbed(h)}" title="${h.name} 地圖" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      <a class="link-btn" href="${mapsLink(h)}" target="_blank" rel="noopener">在 Google 地圖開啟導航 →</a>`;
+  }
+  box.hidden = !open;
+  btn.setAttribute("aria-expanded", open);
+  btn.textContent = open ? "收合地圖" : "📍 查看 Google 地圖";
+});
+
 $("#compareThumbs").addEventListener("click", (e) => {
   const btn = e.target.closest("[data-remove]");
   if (btn) toggleCompare(+btn.dataset.remove, false);
@@ -378,19 +424,26 @@ function renderMatrix() {
       .join("")}</tr>`
   ).join("");
 
+  const addrRow = `<tr><th scope="row">地址 / 地圖</th>${hotels
+    .map((h) => `<td>${h.address}<br><a class="link-btn" href="${mapsLink(h)}" target="_blank" rel="noopener">📍 Google 地圖</a></td>`)
+    .join("")}</tr>`;
+
   const priceRow = `<tr><th scope="row">參考價格帶</th>${hotels
     .map((h) => {
       const sp = salePrice(h);
       const best = sp === minPrice ? " m-best" : "";
-      return `<td class="${best}"><span class="m-price">${fmt(sp)}</span> 起 / ${h.unit}${best ? "<br><small class='yes'>✔ 最划算</small>" : ""}</td>`;
+      const pos = rangePos(h);
+      return `<td class="${best}"><span class="m-price">${fmt(sp)}</span> 起 / ${h.unit}
+        <div class="range__track"><span style="left:${pos.left}%;width:${pos.width}%"></span></div>
+        <small>定價 ${fmt(h.price)} – ${fmt(h.priceMax)}</small>${best ? "<br><small class='yes'>✔ 最划算</small>" : ""}</td>`;
     })
     .join("")}</tr>`;
 
   const foot = `<tfoot><tr><th scope="row">立即預訂</th>${hotels
-    .map((h) => `<td><a class="btn btn--accent" href="${klookUrl(h)}" target="_blank" rel="noopener sponsored">【查看 Klook 優惠】</a><a class="btn btn--ghost" href="${officialUrl(h)}" target="_blank" rel="noopener">【直達飯店官網】</a></td>`)
+    .map((h) => `<td><a class="btn btn--accent" href="${klookUrl(h)}" target="_blank" rel="noopener sponsored">【查看 Klook 優惠】</a><a class="btn btn--ghost" href="${h.official}" target="_blank" rel="noopener">【${h.officialLabel || "直達飯店官網"}】</a></td>`)
     .join("")}</tr></tfoot>`;
 
-  $("#matrixTable").innerHTML = head + `<tbody>${rows}${priceRow}</tbody>` + foot;
+  $("#matrixTable").innerHTML = head + `<tbody>${rows}${addrRow}${priceRow}</tbody>` + foot;
 }
 
 let lastFocus = null;
